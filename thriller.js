@@ -50,18 +50,18 @@ function changeBg(bg, title) {
     });
 }
 
-// Initialize the carousel
+
 document.addEventListener('DOMContentLoaded', function () {
     const carouselElems = document.querySelectorAll('.carousel');
     const carouselInstances = M.Carousel.init(carouselElems, { fullWidth: true });
 
-    // Add click events to carousel items
+    
     document.querySelectorAll('.carousel-item').forEach((item) => {
         item.addEventListener('click', () => {
-            // Remove active class from all items
+            
             document.querySelectorAll('.carousel-item').forEach(slide => slide.classList.remove('active'));
 
-            // Add active class to the clicked item
+            
             item.classList.add('active');
         });
     });
